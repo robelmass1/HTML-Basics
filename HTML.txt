@@ -1,0 +1,269 @@
+# The Head section is where we put information about the webpage. 
+# The Body section is where we display what we want to display.
+#lorem+tab helps to generate long text.
+# <hr> is called horizontal rule and it puts horizontal line in the page.
+
+#<!-- --> Here we can put our comment.
+# <a href="https://www.github.com/robelmass1" target="_self">GitHub</a>
+# <a href="https://www.github.com/robelmass1" target="_blank">GitHub</a>
+
+--> In the above hyperlink the default target is self but if we change 
+the _self to _blank it open in new tab.
+
+#    <a href="https://www.github.com/robelmass1" target="_self" title="This is my GitHub">GitHub</a>
+--> Here we have added a title and it will be visible when we hover 
+our cursor.
+# <a href=" mailto:robelmass1@gmail.com" target="_self">This is my email</a>
+#eg:<img src=" " alt=" " title="">
+-->Inside alt we can put an alternative text which can be displayed
+when the image is not displayed.
+-->The content in title is displayed when we hover our cursor.
+
+# <a href=" "target="_blank">
+    <img src=" " width="400px" height="400px" alt=" " title=" ">
+  </a>
+-->If we put the image between a hyperlink then at time of clicking
+the image the link in href will be displayed.
+
+---------------------AUDIO AND VIDEO IN HTML----------------------
+
+# eg:  <audio controls src="Track01.mp3" title=" "></audio>
+--> We can put audio in our file and then display it using the above.
+--> controls is like boolean either true or false.
+# eg: eg:  <audio control autoplay muted loop src="Track01.mp3" title=" "></audio>
+-->autoplay muted loop are three different features added to it.
+-->it is muted initially.
+# eg: <audio controls autoplay muted loop>
+        <source src="Track01.mp3">
+        <source src="Track01.mp4">
+        Sorry use an other browser it doesnot work
+
+     </audio>
+
+--> At this time if we are not sure of the type of file. It gives the 
+first to be displayed, if not the second and if not the last one.
+
+#eg:<video controls src="TobyMac - Everything - YouTube.MKV" title="TobyMac Everything"></video>
+-->The files here and above are searched from local file in the same
+folder to Html.
+...----> If we don't want any control button to be visible we can put 
+autoplay instead of controls in the above and it runs.
+
+# We can also use the same way for video as audio by relating to source.
+
+--------------------TEXT FROMATING----------------------------------
+
+# eg: <p>I am <b>loved</b> </p>
+--> Makes loved in bold.
+--> Instead of <b> </b> we use:  <i></i> for Italic, <big></big> for
+big text , <small></small> for small text , <sub></sub> for subscript,
+<sup></sup> for superscript, <ins></ins> mean inserted and makes it to
+be underlined, <del></del> makes it delated text, <mark></mark> makes
+the text marked.
+
+----------------------LIST-------------------------------------------
+
+# List can be unordered , ordered or description list.
+# In case of ordered list we can choose the type to order.
+# eg: <ol type="A"> 
+          <li> Grass</li>
+          <li> Meat </li>
+      </ol>
+---> Above it order using letters.In place of "A" we can use "1","a",
+"I" or "i".
+
+#  <h2> Description list</h2>
+     <dl>
+        <dt> </dt>
+        <!--or <dd> </dd>-->
+     </dl>             ...syntax
+--> <dt> </dt> is for description text and  <dd> </dd> is 
+for description defination.It has no any number or bullets.
+#   <dl>
+        <dt> Banana</dt>
+        <dd> is one of the common fruit </dd>
+        <dt> Avocado </dt>
+        <dd> is also another but expensive fruit </dd>
+        <!--or <dd> </dd>-->
+     </dl>
+
+---------------------------COLORS TO WEBPAGE-------------------------------------
+# eg: <body style="background-color: black;">
+        <p style="color: antiquewhite;">Lorem ipsum></p>
+    </body>
+
+---> We use "style" above to put styles to our page.
+# To select color we can use rgb(a,b,c) values or hexadecimal values
+which has this form such as #28f005(light green).
+
+
+---------------------------------TABLE-----------------------------
+# In order to write items in a table we use the following format:
+#eg: <table bgcolor="blue" width="160"> 
+        <tr bgcolor="aqua"> 
+          <th width="80"> Monday</th>
+          <th width="80"> Tuesday</th>
+        </tr>
+        <tr align="center"> 
+          <td> 19-23</td>
+          <td> 19-23</td>
+        </tr>
+   </table>
+
+--> It has 2 rows.<th> is table header(make bold) and  <td> is table 
+data.bgcolor : is the background color.
+--> Width makes all the columns to be spaced equally and the value of
+width at the top equals number of row times the width of each one.
+
+-------------------------SPAN AND DIV--------------------------------
+# Span: adds markup to text or portion of a document.
+# Div: defines the division of a document.
+
+# eg: <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+elit. <span style="color: green;"> provident </p>
+
+--> It styles only the part in the span part.
+# <div style="color: green;">
+    <p> </p>
+    <p> </p>
+  </div> 
+--> The attribute applied for all things in between. 
+
+-----------------METATAGS-----------------------------------------
+
+# Meta element is an element represents various kinds of metadata that
+cannot be expressed using the title,base,link,style and script elements.
+# Meta data is data about data.
+#eg:<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is a teaching tutorial">
+    <meta name="keywords" content="HTML,CSS , Tutorial">
+    <meta name="author" content="Robel ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="10">
+
+--> The first one allows us to run it in different screen sizes.
+--> UTF is unicode.
+--> The refresh meta data helps to refesh the above in the page every
+10 seconds.
+
+
+---------------------BUTTONS---------------------------------------
+# eg: <a href=" https://www.github.com/robelmass1" target="_blank" >
+          <button disabled>Click</button>
+      </a>
+--> Here at the time of clicking the button it doesnot allow to open
+the hyperlink indicated here because it is disabled.
+#eg:<button onclick="dosomething()"> Submit</button>
+       <p id="trial">Goodday Everyday</p>
+
+    <script>
+        function dosomething(){
+            document.getElementById("trial").innerHTML="See You";
+        }
+    </script>
+--> Here before the button is clicked we see "Goodday Everyday" then 
+when we click the "submit" button it displays See You.
+
+--------------------IFRAMES-----------------------------------------
+
+# Iframe:is embadded content from another source into HTML document.
+# We use it for ads(advertisment) and many hacking techniques. 
+# Some websites refuse to work with iframe 
+# eg: <iframe src="https://www.google.com"></iframe>
+--> This above one doesnot work with iframe.(refuse to connect)
+# eg:<iframe src="https://www.bing.com" width="600" height="400"></iframe>
+--> This above one works with iframe.
+#eg:<iframe style="border: 0" src="ad.html" width="600" height="400"></iframe>
+
+
+------------------------FORMS-----------------------------------------
+# eg: 
+    <form>
+      <div>
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="fName" placeholder="Robel" required>
+      </div>
+    </form>
+-->required makes it to be filled mandatory before submitting.
+#eg: 
+    <div>
+        <input type="reset">
+    </div>
+-->Using this helps to reset from what we have written.
+
+# eg: <form action="action_page.php" method="get">
+
+      </form>
+-->To conect to our php file here we write action command in form and 
+make it either get or post method.
+#eg: <div>
+        <label for="password">Passcode:</label>
+        <input type="password" id="password" name="password" maxlength="10" required >
+    </div>
+ 
+--> We don't use get for sensetive informations instead we use post.
+#eg: <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="robelmass1@gmail.com" >
+    </div>
+
+    <br>
+    <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+49181188181">
+    </div>
+#eg: <div>
+        <label for="bdate">BirthDate:</label>
+        <input type="date" id="bdate" name="bdate" >
+
+    </div>
+
+    
+    <br>
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number " id="quantity" name="quantity" 
+           min="1" max="1000" value="1">
+
+        
+    </div>
+-->We put minimum and maximum value we can put here.
+--> 1 is the default value here.
+
+#eg: <div>
+        <label> Male </label>
+        <input type="radio">
+
+        <label> Female </label>
+        <input type="radio">
+    </div>
+#eg: <div>
+        <label> Male </label>
+        <input type="radio" name="title">
+
+        <label> Female </label>
+        <input type="radio" name="title">
+    </div>
+--> Adding a part like name makes it to be the same part and helps to 
+select only one of them.Not both at the same time.
+
+#eg: <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa"> Visa</option>
+            <option value="Mastercard"> Mastercard</option>
+            <option value="blik"> Blik</option>
+            <option value="PayPal"> PayPal</option>
+        </select>
+        
+     </div>
+
+#eg: <div>
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe"> 
+    </div>
+    
+
+
+#eg: 

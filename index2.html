@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="refresh" content="10">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is a teaching tutorial">
+    <meta name="keywords" content="HTML,CSS , Tutorial">
+    <meta name="author" content="Robel ">
+    <title>Extension Of HTML</title>
+</head>
+<body >
+    <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style="background-color: greenyellow; color: green;"> provident aspernatur, totam aperiam  </span> vero numquam error officia deserunt laboriosam molestias perferendis aliquam officiis veritatis corporis illum quas magnam amet voluptatum?</p>
+    <p style="color: black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias culpa rerum fugiat amet pariatur nisi laboriosam tempora neque sapiente vitae. Explicabo iure optio numquam, vero dolorem recusandae accusantium voluptate labore.</p>
+
+    <iframe src="https://www.bing.com" width="600" height="400"></iframe> <br>
+    <iframe style="border: 0" src="ad.html" width="600" height="400"></iframe>
+
+    <a href=" https://www.github.com/robelmass1" target="_blank" >
+    <button disabled style="background-color: black; color: aqua;">Click</button>
+    </a>
+
+    <button onclick="dosomething()"> Submit</button>
+    <p id="trial">Goodday Everyday</p>
+
+    <script>
+        function dosomething(){
+            document.getElementById("trial").innerHTML="See You";
+        }
+    </script>
+
+<form action="action_page.php" method="post">
+    <div>
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="fName" placeholder="Robel">
+    </div>
+    <br>
+    <div>
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" name="lName" placeholder="Massebo">
+    </div> 
+    <br>
+    <div>
+        <label for="password">Passcode:</label>
+        <input type="password" id="password" name="password" maxlength="10" >
+    </div>
+
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="robelmass1@gmail.com" >
+    </div>
+
+    <br>
+    <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+49181188181">
+    </div>
+
+    <br>
+    <div>
+        <label for="bdate">BirthDate:</label>
+        <input type="date" id="bdate" name="bdate" >
+
+    </div>
+
+    
+    <br>
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number " id="quantity" name="quantity" min="1" max="1000" value="1">
+        
+    </div>
+    <br>
+    <div>
+        <label> Male </label>
+        <input type="radio" name="title">
+
+        <label> Female </label>
+        <input type="radio" name="title">
+    </div>
+
+    
+    <br>
+    <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa"> Visa</option>
+            <option value="Mastercard"> Mastercard</option>
+            <option value="blik"> Blik</option>
+            <option value="PayPal"> PayPal</option>
+        </select>
+        
+    </div>
+    <br>
+
+    <div>
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe"> 
+    </div>
+    <br>
+    <div>
+        <input type="reset">
+    </div> 
+
+    <br>
+    <div>
+        <input type="submit">
+    </div> 
+
+    
+
+<form>
+
+
+
+</body>
+</html>
